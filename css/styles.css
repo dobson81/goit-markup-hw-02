@@ -1,0 +1,31 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-start;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  cursor: pointer;
+}
+li {
+  padding-right: 8px;
+}
+.images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+footer {
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 1628px;
+  background: #2f303a;
+}

@@ -1,31 +1,201 @@
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #e5e5e5;
+}
+.wrapper {
+  width: 1600px;
+  background-color: #ffffff;
+}
+.portfolio-wrapper {
+  width: 1600px;
+}
+a {
+  text-decoration: none;
+}
+.topnav {
+  background-color: #ffffff;
+  width: 1600;
+  height: 80;
+  display: flex;
+}
+
+.logo {
+  font-family: 'Raleway';
+  color: #000000;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  margin-top: 24px;
+  margin-left: 215px;
+  margin-bottom: 25px;
+}
+.roboczy3 {
+  color: #2196f3;
 }
 
 .menu {
+  padding-right: 200px; /*roboczo 200, coś tu sie nie zgadza */
   display: flex;
-  justify-content: flex-start;
-}
-.buttons {
-  display: flex;
-  justify-content: center;
   list-style-type: none;
-  cursor: pointer;
+  margin-top: 32px;
+  margin-left: 93px;
+  font-size: 14px;
+  font-weight: 500;
+  color: azure; /*nie moge ustawic koloru*/
+  letter-spacing: 2%;
 }
-li {
-  padding-right: 8px;
+.menu > li {
+  padding-right: 46px;
 }
-.images {
+.contacts {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  list-style-type: none;
+  margin-top: 32px;
+  margin-right: 227px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #757575; /*i tutaj tez nie działa*/
+}
+.contacts > li {
+  padding-right: 50px;
+}
+.contacts:hover {
+  color: #f3c921; /*i tu też nie działa*/
+}
+
+.big-title {
+  width: 1600px;
+  height: 600px;
+
+  background: #2f303a;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  width: 696px;
+  height: 120px;
+  color: #ffffff;
+  margin-top: 200px;
+  margin-left: 452px;
+  font-size: 44px;
+  letter-spacing: 6px;
+
+  text-align: center;
+}
+.button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+.description-studio {
+  width: 1170px;
+
+  margin-right: 215px;
+  margin-left: 215px;
+  margin-top: 94px;
+}
+.description-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-family: 'Roboto';
+}
+.description-list > li > h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #212121; /*cos nie tak z ta trzcionka*/
+  line-height: 16.41px;
+  text-transform: uppercase;
+}
+.description-list > li > p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
+}
+.our-job {
+  width: 1170px;
+  height: 386px;
+  margin-top: 94px;
+}
+.small-title {
+  font-size: 36px;
+  font-weight: 700;
+  padding-left: 624px;
+  line-height: 42.19px;
+}
+
+.images-studio-top {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  background-color: #f3c921;
+  margin-left: 215px;
+  width: 1170px;
+  padding-top: 50px;
+}
+.team {
+  margin-top: 94px;
+  text-align: center;
+}
+
+.workers {
+  display: flex;
   list-style-type: none;
 }
-footer {
-  position: absolute;
+.last-title {
+  color: #212121;
+  font-size: 36px;
+}
+.footer {
   width: 1600px;
   height: 252px;
   left: 0px;
   top: 1628px;
   background: #2f303a;
+  display: flex;
+  flex-direction: column;
+}
+.logo-footer {
+  font-family: 'Raleway';
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  margin-top: 60px;
+  margin-left: 215px;
+}
+
+.footer-address {
+  list-style-type: none;
+  margin-left: 215px;
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif; /*tu znow nie moge zmienić kolorów i trzcionki, pewnie  przez to ze sa to linki*/
+  color: #ffffff;
+  line-height: 24px; /*to trzeba bedzie zmienic na mnoznik*/
+}
+.footer-address > li {
+  padding-top: 9px;
+}
+.buttons-portfolio {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  cursor: pointer;
+}
+.images-portfolio {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
 }

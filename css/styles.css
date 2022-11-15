@@ -15,6 +15,7 @@ a {
   width: 1600;
   height: 80;
   display: flex;
+  border: #ececec solid 1px;
 }
 
 .logo {
@@ -22,13 +23,13 @@ a {
   color: #000000;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 0.72;
   letter-spacing: 0.03em;
   margin-top: 24px;
   margin-left: 215px;
   margin-bottom: 25px;
 }
-.roboczy3 {
+.logo-first-letters {
   /*zmienic klase*/
   color: #2196f3;
 }
@@ -41,7 +42,7 @@ a {
   margin-left: 93px;
   font-size: 14px;
   font-weight: 500;
-
+  line-height: 1.7;
   letter-spacing: 2%;
 }
 .menu > li {
@@ -85,14 +86,14 @@ a {
   margin-right: auto;
   width: 200px;
   height: 50px;
-  /*dodac pseudoklase*/
-  color: #ffffff;
+
   font-size: 16px;
   line-height: 30px;
   margin-top: 100px;
 }
 .button:hover {
   background-color: #2196f3;
+  cursor: pointer;
 }
 .description-studio {
   width: 1170px;
@@ -209,32 +210,26 @@ a {
   color: #ffffff;
   line-height: 24px; /*to trzeba bedzie zmienic na mnoznik*/
 }
-.footer-address > li {
+.footer-address {
   padding-top: 9px;
 }
+
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 200px;
 }
 
 .buttons-portfolio {
-  background-color: #619123;
-  display: flex;
-
-  padding-left: 0px;
-
-  width: 572px;
   list-style-type: none;
-  margin-left: auto;
-  margin-right: auto;
 }
-
+.button-item {
+  padding: 6px;
+}
+.button-item:hover {
+  cursor: pointer;
+  background-color: #2196f3;
+}
 .images-portfolio {
-  display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
-  margin-left: auto;
-  margin-right: auto;
 }
 .images-portfolio span {
   color: #757575;

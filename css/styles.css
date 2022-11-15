@@ -10,7 +10,7 @@ body {
   width: 1600px;
 }
 a {
-  text-decoration: none;
+  text-decoration: none; /*to zmienic bo chyba globalnie*/
 }
 .topnav {
   background-color: #ffffff;
@@ -43,7 +43,7 @@ a {
   margin-left: 93px;
   font-size: 14px;
   font-weight: 500;
-  color: azure; /*nie moge ustawic koloru*/
+
   letter-spacing: 2%;
 }
 .menu > li {
@@ -90,11 +90,14 @@ a {
   margin-right: auto;
   width: 200px;
   height: 50px;
-  background-color: #2196f3; /*dodac pseudoklase*/
+  /*dodac pseudoklase*/
   color: #ffffff;
   font-size: 16px;
   line-height: 30px;
   margin-top: 30px;
+}
+.button:hover {
+  background-color: #2196f3;
 }
 .description-studio {
   width: 1170px;
@@ -126,35 +129,41 @@ a {
   height: 386px;
   margin-left: 215px;
   margin-top: 94px;
-  background-color: #757575;
 }
 .small-title {
   font-size: 36px;
   font-weight: 700;
 
-  line-height: 42.19px;
-  background-color: #212121;
+  line-height: 42.19px; /*pozamieniac na mnozniki*/
+
   text-align: center;
 }
 
 .images-studio-top {
   display: flex;
-
+  padding-left: 0px;
   list-style-type: none;
-  background-color: #f3c921;
+
   margin-left: auto;
   margin-right: auto;
+}
+.images-studio-top > li {
+  padding-right: 30px;
 }
 
 .team {
   margin-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 648px;
 }
 
 .worker-list {
   display: flex;
   list-style-type: none;
-
-  background-color: aliceblue;
+}
+.worker-list > li {
+  padding-right: 30px;
 }
 .item {
   padding: 10px;
@@ -165,7 +174,6 @@ a {
   font-size: 36px;
   padding-top: 94px;
   text-align: center;
-  background-color: aqua;
 }
 .footer {
   width: 1600px;
@@ -209,13 +217,16 @@ a {
 }
 .buttons-portfolio {
   display: flex;
-  justify-content: center;
+
   list-style-type: none;
+}
+.buttons-portfolio li {
+  background-color: #2196f3;
   cursor: pointer;
 }
+
 .images-portfolio {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  gap: 30px;
 }

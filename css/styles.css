@@ -5,9 +5,7 @@ body {
 .wrapper {
   width: 1600px;
   background-color: #ffffff;
-}
-.portfolio-wrapper {
-  width: 1600px;
+  margin: auto;
 }
 a {
   text-decoration: none; /*to zmienic bo chyba globalnie*/
@@ -36,7 +34,7 @@ a {
 }
 
 .menu {
-  padding-right: 200px; /*roboczo 200, coś tu sie nie zgadza */
+  padding-right: 200px;
   display: flex;
   list-style-type: none;
   margin-top: 32px;
@@ -56,13 +54,10 @@ a {
   margin-right: 227px;
   font-size: 14px;
   font-weight: 500;
-  color: #757575; /*i tutaj tez nie działa*/
+  color: #757575;
 }
 .contacts > li {
   padding-right: 50px;
-}
-.contacts:hover {
-  color: #f3c921; /*i tu też nie działa*/
 }
 
 .big-title {
@@ -94,7 +89,7 @@ a {
   color: #ffffff;
   font-size: 16px;
   line-height: 30px;
-  margin-top: 30px;
+  margin-top: 100px;
 }
 .button:hover {
   background-color: #2196f3;
@@ -115,7 +110,7 @@ a {
 .description-list > li > h4 {
   font-size: 14px;
   font-weight: 700;
-  color: #212121; /*cos nie tak z ta trzcionka*/
+  color: #212121;
   line-height: 16.41px;
   text-transform: uppercase;
 }
@@ -156,6 +151,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   height: 648px;
+  background: #f5f4fa;
 }
 
 .worker-list {
@@ -164,6 +160,14 @@ a {
 }
 .worker-list > li {
   padding-right: 30px;
+}
+.worker-list p {
+  color: #757575;
+  font-size: 16px;
+}
+.worker-list h3 {
+  color: #212121;
+  font-size: 16px;
 }
 .item {
   padding: 10px;
@@ -201,32 +205,40 @@ a {
   padding-top: 20px;
   font-size: 14px;
   font-weight: 400;
-  font-family: 'Roboto', sans-serif; /*tu znow nie moge zmienić kolorów i trzcionki, pewnie  przez to ze sa to linki*/
+  font-family: 'Roboto', sans-serif;
   color: #ffffff;
   line-height: 24px; /*to trzeba bedzie zmienic na mnoznik*/
 }
 .footer-address > li {
   padding-top: 9px;
 }
-.portfolio-main {
-  width: 1170px;
+.container {
+  margin-left: auto;
   margin-right: auto;
-  margin-left: 215px;
-  margin-top: 174px;
-  background-color: #2196f3;
 }
+
 .buttons-portfolio {
+  background-color: #619123;
   display: flex;
 
+  padding-left: 0px;
+
+  width: 572px;
   list-style-type: none;
-}
-.buttons-portfolio li {
-  background-color: #2196f3;
-  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .images-portfolio {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.images-portfolio span {
+  color: #757575;
+}
+.images-description h3 {
+  color: #212121;
 }

@@ -7,9 +7,7 @@ body {
   background-color: #ffffff;
   margin: auto;
 }
-a {
-  text-decoration: none; /*to zmienic bo chyba globalnie*/
-}
+
 .topnav {
   background-color: #ffffff;
   width: 1600;
@@ -17,7 +15,9 @@ a {
   display: flex;
   border: #ececec solid 1px;
 }
-
+.topnav > a {
+  text-decoration: none;
+}
 .logo {
   font-family: 'Raleway';
   color: #000000;
@@ -30,7 +30,6 @@ a {
   margin-bottom: 25px;
 }
 .logo-first-letters {
-  /*zmienic klase*/
   color: #2196f3;
 }
 
@@ -48,6 +47,10 @@ a {
 .menu > li {
   padding-right: 46px;
 }
+.menu > li > a {
+  color: #212121;
+  text-decoration: none;
+}
 .contacts {
   display: flex;
   list-style-type: none;
@@ -59,6 +62,10 @@ a {
 }
 .contacts > li {
   padding-right: 50px;
+}
+.contacts > li > a {
+  text-decoration: none;
+  color: #757575;
 }
 
 .big-title {

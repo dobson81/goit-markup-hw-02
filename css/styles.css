@@ -15,7 +15,7 @@ body {
   background-color: #ffffff;
   width: 1600;
   height: 80;
-  display: flex;
+
   border: #ececec solid 1px;
 }
 .topnav > a {

@@ -18,6 +18,7 @@ body {
 .topnav > a {
   text-decoration: none;
 }
+
 .logo {
   font-family: 'Raleway';
   color: #000000;
@@ -35,14 +36,13 @@ body {
 
 .menu {
   padding-right: 200px;
-  display: flex;
+
   list-style-type: none;
-  margin-top: 32px;
-  margin-left: 93px;
+
   font-size: 14px;
   font-weight: 500;
   line-height: 1.7;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 .menu > li {
   padding-right: 46px;
@@ -52,8 +52,10 @@ body {
   text-decoration: none;
   line-height: 1.17;
 }
+.menu > li > a:hover {
+  color: #2196f3;
+}
 .contacts {
-  display: flex;
   list-style-type: none;
   margin-top: 32px;
   margin-right: 227px;
@@ -62,21 +64,20 @@ body {
   color: #757575;
 }
 .contacts > li {
-  padding-right: 50px;
 }
 .contacts > li > a {
   text-decoration: none;
   color: #757575;
   line-height: 1.17;
 }
-
+.contacts > li > a:hover {
+  color: #2196f3;
+}
 .big-title {
   width: 1600px;
   height: 600px;
 
   background: #2f303a;
-  display: flex;
-  flex-direction: column;
 }
 
 .title {
@@ -198,8 +199,10 @@ body {
   left: 0px;
   top: 1628px;
   background: #2f303a;
-  display: flex;
-  flex-direction: column;
+}
+
+.footer a:hover {
+  color: #2196f3;
 }
 .logo-footer {
   font-family: 'Raleway';
@@ -208,24 +211,53 @@ body {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  margin-top: 60px;
-  margin-left: 215px;
 }
-
+.footer .logo-footer {
+  text-decoration: none;
+}
+.logo-footer:hover {
+  color: #2196f3;
+}
 .footer-address {
   list-style-type: none;
-  margin-left: 215px;
-  padding-top: 20px;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
-  color: #ffffff;
-  line-height: 24px; /*to trzeba bedzie zmienic na mnoznik*/
-}
-.footer-address {
-  padding-top: 9px;
-}
 
+  font-size: 14px;
+
+  font-family: 'Roboto', sans-serif;
+
+  line-height: 24px;
+}
+.footer-address > .first-item > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+}
+.footer-address > .first-item > a:hover {
+  color: #2196f3;
+}
+.footer-address > .second-item > a {
+  text-decoration-line: underline;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+}
+.footer-address > .second-item > a:hover {
+  color: #2196f3;
+}
+.footer-address > .third-item > a {
+  text-decoration: none;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.03em;
+  line-height: 1.7;
+}
+.footer-address > .third-item > a:hover {
+  color: #2196f3;
+}
 .container {
   margin-left: 200px;
 }

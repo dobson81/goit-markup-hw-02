@@ -1,38 +1,45 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #e5e5e5;
+  background-color: var(--lightGray);
 }
-
+:root {
+  --white: #ffffff;
+  --bright: #f5f4fa;
+  --black: #000000;
+  --veryDark: #212121;
+  --blue: #2196f3;
+  --lightGray: #e5e5e5;
+  --gray: #757575;
+  --darkGray: #2f303a;
+}
 .wrapper {
   width: 1600px;
-  background-color: #ffffff;
+  background-color: var(--white);
   margin: auto;
 }
 
-.topnav {
-  background-color: #ffffff;
-  width: 1600;
-  height: 80;
+.top-nav {
+  background-color: var(--white);
 
-  border: #ececec solid 1px;
+  border: 1px solid var(--lightGray);
 }
-.topnav > a {
+.top-nav > a {
   text-decoration: none;
 }
 
 .logo {
   font-family: 'Raleway';
-  color: #000000;
+  color: var(--black);
   font-weight: 700;
   font-size: 26px;
   line-height: 0.72;
   letter-spacing: 0.03em;
 }
 .logo:hover {
-  color: #2196f3;
+  color: var(--blue);
 }
 .logo-first-letters {
-  color: #2196f3;
+  color: var(--blue);
 }
 
 .menu {
@@ -45,41 +52,47 @@ body {
 }
 
 .menu > li > a {
-  color: #212121;
+  color: var(--veryDark);
   text-decoration: none;
   line-height: 1.17;
 }
 .menu > li > a:hover {
-  color: #2196f3;
+  color: var(--blue);
 }
+.menu > li > a:focus {
+  color: var(--blue);
+}
+
 .contacts {
   list-style-type: none;
-  margin-top: 32px;
 
   font-size: 14px;
   font-weight: 500;
-  color: #757575;
+  color: var(--gray);
 }
 
 .contacts > li > a {
   text-decoration: none;
-  color: #757575;
+  color: var(--gray);
   line-height: 1.17;
 }
 .contacts > li > a:hover {
-  color: #2196f3;
+  color: var(--blue);
+}
+.contacts > li > a:focus {
+  color: var(--blue);
 }
 .big-title {
   width: 1600px;
   height: 600px;
 
-  background: #2f303a;
+  background: var(--darkGray);
 }
 
 .title {
   width: 696px;
   height: 120px;
-  color: #ffffff;
+  color: var(--white);
 
   font-size: 44px;
   letter-spacing: 6px;
@@ -97,51 +110,45 @@ body {
 }
 .button:hover {
   cursor: pointer;
-  background: #2196f3;
+  background: var(--blue);
 }
 .button:focus {
-  background-color: #2196f3;
+  background-color: var(--blue);
 }
 .description-studio {
   width: 1170px;
 }
 .description-list {
   list-style-type: none;
-  font-family: 'Roboto';
+  letter-spacing: 0.03em;
 }
 .description-list > li > h4 {
-  font-family: 'Roboto';
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
+
   text-transform: uppercase;
 
-  color: #212121;
+  color: var(--veryDark);
 }
 .description-list > li > p {
-  font-family: 'Roboto';
-
   font-size: 14px;
   line-height: 1.7;
 
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--gray);
 }
 .our-job {
   width: 1170px;
 }
 .small-title {
-  font-family: 'Roboto';
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
 
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--veryDark);
 }
 
 .images-studio-top {
@@ -149,101 +156,91 @@ body {
 }
 
 .team {
-  background: #f5f4fa;
+  background: var(--bright);
 }
 .last-title {
-  font-family: 'Roboto';
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
 
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--veryDark);
 }
 
 .worker-list {
   list-style-type: none;
 }
-.worker-list .item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.worker-list h3 {
-  font-family: 'Roboto';
 
+.worker-list h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--darkGray);
 }
 
 .worker-list p {
-  font-family: 'Roboto';
-
   font-size: 16px;
   line-height: 1.18;
 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--gray);
 }
 
 .footer {
   width: 1600px;
   height: 252px;
 
-  background: #2f303a;
+  background: var(--darkGray);
 }
 
 .footer a:hover {
-  color: #2196f3;
+  color: var(--blue);
 }
 
 .logo-footer {
   font-family: 'Raleway';
-  color: #ffffff;
+  color: var(--white);
   font-weight: 700;
   font-size: 26px;
-  line-height: 1, 19;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 .footer .logo-footer {
   text-decoration: none;
 }
 .logo-footer:hover {
-  color: #2196f3;
+  color: var(--blue);
 }
 .logo-footer:focus {
-  color: #2196f3;
+  color: var(--blue);
 }
 .footer-address {
   list-style-type: none;
 
   font-size: 14px;
 
-  font-family: 'Roboto', sans-serif;
-
-  line-height: 1, 7;
+  line-height: 1.7;
 }
 .footer-address > .first-item > a {
   text-decoration: none;
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  color: var(--white);
+
   font-style: normal;
   letter-spacing: 0.03em;
   line-height: 1.7;
 }
-.footer-address > .first-item > a:hover {
-  color: #2196f3;
+.footer-address a:hover {
+  /*nie rozumiem dlaczego hover nie stosuje sie wszystkich elementów adresu w stopce*/
+  color: var(--blue);
 }
-.footer-address > .first-item > a:focus {
-  color: #2196f3;
+.footer-address a:focus {
+  /*i tak samo focus*/
+  color: var(--blue);
 }
 .footer-address > .second-item > a {
   text-decoration-line: underline;
@@ -252,11 +249,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.7;
 }
-.footer-address > .second-item > a:hover {
-  color: #2196f3;
+.footer-address a:hover {
+  /*muszę tu dopisć kolejny hover bo inaczej nie działa podswietlenie info@example.com*/
+  color: var(--blue);
 }
-.footer-address > .second-item > a:focus {
-  color: #2196f3;
+.footer-address a:focus {
+  color: var(--blue);
 }
 .footer-address > .third-item > a {
   text-decoration: none;
@@ -265,15 +263,15 @@ body {
   letter-spacing: 0.03em;
   line-height: 1.7;
 }
-.footer-address > .third-item > a:hover {
-  color: #2196f3;
+.footer-address a:hover {
+  /*a bez tego nr tel*/
+  color: var(--blue);
 }
-.footer-address > .third-item > a:focus {
-  color: #2196f3;
+.footer-address a:focus {
+  color: var(--blue);
 }
 .container {
   width: 1170px;
-  border: #eeeeee 1px solid;
 }
 
 .buttons-portfolio {
@@ -281,10 +279,10 @@ body {
 }
 .button-item {
   padding: 6px;
-  border: none; /*nie wiem skad mi się wziąl border tutaj*/
-  background: #f5f4fa;
+  border: none;
+  background: var(--bright);
   border-radius: 4px;
-  color: #212121;
+  color: var(--veryDark);
   font-family: 'Roboto';
 
   font-weight: 500;
@@ -294,33 +292,29 @@ body {
 }
 .button-item:hover {
   cursor: pointer;
-  background-color: #2196f3;
+  background-color: var(--blue);
 }
 .button-item:focus {
-  background-color: #2196f3;
+  background-color: var(--blue);
 }
 .images-portfolio {
   list-style-type: none;
 }
 .images-portfolio h3 {
-  font-family: 'Roboto';
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 
   letter-spacing: 0.06em;
 
-  color: #212121;
+  color: var(--veryDark);
 }
 
 .images-portfolio span {
-  font-family: 'Roboto';
-
   font-size: 16px;
   line-height: 1.87;
 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--gray);
 }

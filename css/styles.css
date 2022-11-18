@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--lightGray);
+  color: var(--veryDark);
 }
 :root {
   --white: #ffffff;
@@ -52,7 +53,7 @@ body {
 }
 
 .menu > li > a {
-  color: var(--veryDark);
+  color: inherit;
   text-decoration: none;
   line-height: 1.17;
 }
@@ -147,8 +148,6 @@ body {
   line-height: 1.16;
 
   letter-spacing: 0.03em;
-
-  color: var(--veryDark);
 }
 
 .images-studio-top {
@@ -164,8 +163,6 @@ body {
   line-height: 1.16;
 
   letter-spacing: 0.03em;
-
-  color: var(--veryDark);
 }
 
 .worker-list {
@@ -282,7 +279,7 @@ body {
   border: none;
   background: var(--bright);
   border-radius: 4px;
-  color: var(--veryDark);
+
   font-family: 'Roboto';
 
   font-weight: 500;
@@ -306,8 +303,6 @@ body {
   line-height: 2;
 
   letter-spacing: 0.06em;
-
-  color: var(--veryDark);
 }
 
 .images-portfolio span {
